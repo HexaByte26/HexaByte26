@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @HexaByte26
 - 👀 I’m interested in Game Development, Machine Learning
-- 🌱 I’m currently learning: Python, Java
+- 🌱 I’m currently learning: Python, Java, HTML, CSS, Javascript
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 - 😄 Pronouns: hee/hee
