@@ -1,5 +1,4 @@
 class Queue:
-class Queue:
     def __init__(self):
         self.place_holder = "___"
         self.size = 5
