@@ -81,6 +81,33 @@ def main():
         for num, operation in enumerate(operations, start=1):
             print(f"{num}. {operation}")
 
+        try:
+            selected_operation = int(input("Enter a the Number: "))
+        except ValueError:
+            print("Log: Input must be a Number")
+            continue
+            
+        if selected_operation > 4 or selected_operation < 1):
+            print("Log: Number must be 1 - 4")
+            continue
+            
+        if selected_operation == 1:
+            name = input("Enter the name of the driver of the Vehicle: ")
+            vehicle_type = input("Enter the vehicle type (e.g Sedan): ")
+            brand = input("Enter the brand of the Vehicle: ")
+            
+            vehicle = Vehicle(name, vehicle_type, brand)
+            
+            toll_gate_manager.enqueue_vehicle(vehicle)
+            
+            print("Log: Vehicle is enqueued")
+            
+        elif selected_operation == 2:
+            toll_gate_manger.dequeue_vehicle()
+            
+        elif selected_operation == 3:
+            running = False
+
 
 if __name__ == "__main__":
     main()
