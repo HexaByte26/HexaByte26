@@ -12,7 +12,7 @@ class Matrix:
                 row.append(self.place_holder)
             self.grid.append(row)
 
-    def connect_vert(self, start_vert, destination_vert):
+    def add_edge(self, start_vert, destination_vert):
         self.grid[destination_vert][start_vert] = 1
 
     def print_matrix(self):
@@ -22,5 +22,5 @@ class Matrix:
 
 
 mtrx = Matrix()
-mtrx.connect_vert(1, 3)
+mtrx.add_edge(1, 3)
 mtrx.print_matrix()
